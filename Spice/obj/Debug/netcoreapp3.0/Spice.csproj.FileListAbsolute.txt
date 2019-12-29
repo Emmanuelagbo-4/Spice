@@ -472,3 +472,6 @@ C:\Users\Aerodynamicman\source\repos\VS_2019_Projects\Spice\Spice\obj\Debug\netc
 C:\Users\Aerodynamicman\source\repos\VS_2019_Projects\Spice\Spice\obj\Debug\netcoreapp3.0\Spice.csprojAssemblyReference.cache
 C:\Users\Aerodynamicman\source\repos\VS_2019_Projects\Spice\Spice\obj\Debug\netcoreapp3.0\Razor\Views\Shared\_DetailsAndBackToListButton.cshtml.g.cs
 C:\Users\Aerodynamicman\source\repos\VS_2019_Projects\Spice\Spice\obj\Debug\netcoreapp3.0\Razor\Areas\Admin\Views\Category\Details.cshtml.g.cs
+C:\Users\Aerodynamicman\source\repos\VS_2019_Projects\Spice\Spice\obj\Debug\netcoreapp3.0\Razor\Areas\Admin\Views\SubCategory\Index.cshtml.g.cs
+C:\Users\Aerodynamicman\source\repos\VS_2019_Projects\Spice\Spice\obj\Debug\netcoreapp3.0\Razor\Areas\Admin\Views\SubCategory\Create.cshtml.g.cs
+C:\Users\Aerodynamicman\source\repos\VS_2019_Projects\Spice\Spice\obj\Debug\netcoreapp3.0\Razor\Views\Shared\_StatusMessage.cshtml.g.cs
