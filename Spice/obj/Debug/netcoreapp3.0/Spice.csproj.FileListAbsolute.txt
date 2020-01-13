@@ -480,3 +480,4 @@ C:\Users\Aerodynamicman\source\repos\VS_2019_Projects\Spice\Spice\obj\Debug\netc
 C:\Users\Aerodynamicman\source\repos\VS_2019_Projects\Spice\Spice\obj\Debug\netcoreapp3.0\Razor\Areas\Admin\Views\SubCategory\Delete.cshtml.g.cs
 C:\Users\Aerodynamicman\source\repos\VS_2019_Projects\Spice\Spice\obj\Debug\netcoreapp3.0\Razor\Areas\Admin\Views\MenuItem\Index.cshtml.g.cs
 C:\Users\Aerodynamicman\source\repos\VS_2019_Projects\Spice\Spice\obj\Debug\netcoreapp3.0\Razor\Areas\Admin\Views\MenuItem\Create.cshtml.g.cs
+C:\Users\Aerodynamicman\source\repos\VS_2019_Projects\Spice\Spice\obj\Debug\netcoreapp3.0\Razor\Areas\Admin\Views\MenuItem\Edit.cshtml.g.cs
