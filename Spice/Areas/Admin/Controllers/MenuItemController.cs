@@ -102,6 +102,7 @@ namespace Spice.Areas.Admin.Controllers
             {
                 return NotFound();
             }
+            var menuItemFromDb = await _db.MenuItem.FindAsync(MenuItemVM.MenuItem.Id);
             return View(MenuItemVM);
         }
 
