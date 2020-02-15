@@ -117,7 +117,7 @@ namespace Spice.Areas.Identity.Pages.Account
                         await _roleManager.CreateAsync(new IdentityRole(SD.CustomerUser));
                     }
 
-                    await _userManager.AddToRoleAsync(user, SD.KitchenUser);
+                    await _userManager.AddToRoleAsync(user, SD.ManagerUser);
 
                     //_logger.LogInformation("User created a new account with password.");
 
