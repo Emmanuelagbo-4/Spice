@@ -485,3 +485,5 @@ C:\Users\Aerodynamicman\source\repos\VS_2019_Projects\Spice\Spice\obj\Debug\netc
 C:\Users\Aerodynamicman\source\repos\VS_2019_Projects\Spice\Spice\obj\Debug\netcoreapp3.0\Razor\Areas\Admin\Views\Coupon\Create.cshtml.g.cs
 C:\Users\Aerodynamicman\source\repos\VS_2019_Projects\Spice\Spice\obj\Debug\netcoreapp3.0\Razor\Views\Shared\_ThumbnailAreaPartial.cshtml.g.cs
 C:\Users\Aerodynamicman\source\repos\VS_2019_Projects\Spice\Spice\obj\Debug\netcoreapp3.0\Razor\Areas\Admin\Views\User\Index.cshtml.g.cs
+C:\Users\Aerodynamicman\source\repos\VS_2019_Projects\Spice\Spice\obj\Debug\netcoreapp3.0\Razor\Areas\Admin\Views\MenuItem\Details.cshtml.g.cs
+C:\Users\Aerodynamicman\source\repos\VS_2019_Projects\Spice\Spice\obj\Debug\netcoreapp3.0\Razor\Areas\Customer\Views\Home\Details.cshtml.g.cs

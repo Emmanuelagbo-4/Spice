@@ -17,11 +17,17 @@ namespace Spice.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly ApplicationDbContext _db;
-
+        [BindProperty]
+        public MenuItemViewModel MenuItemVM { get; set; }
         public HomeController(ILogger<HomeController> logger, ApplicationDbContext db)
         {
             _logger = logger;
             _db = db;
+            MenuItemVM = new MenuItemViewModel()
+            {
+                Category = _db.Category,
+                MenuItem = new Models.MenuItem()
+            };
         }
 
         public async Task <IActionResult> Index()
@@ -33,6 +39,24 @@ namespace Spice.Controllers
                 Coupon = await _db.Coupon.Where(b => b.isActive == true).ToListAsync()
             };
             return View(IndexVM);
+        }
+
+        //GET-DETAILS
+        public async Task<IActionResult> Details(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            MenuItemVM.MenuItem = await _db.MenuItem.Include(n => n.Category).Include(n => n.SubCategory).SingleOrDefaultAsync(n => n.Id == id);
+
+            if (MenuItemVM.MenuItem == null)
+            {
+                return NotFound();
+            }
+            var menuItemFromDb = await _db.MenuItem.FindAsync(MenuItemVM.MenuItem.Id);
+            return View(MenuItemVM);
         }
 
         public IActionResult Privacy()
