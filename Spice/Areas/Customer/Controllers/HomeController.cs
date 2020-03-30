@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
@@ -42,6 +43,7 @@ namespace Spice.Controllers
         }
 
         //GET-DETAILS
+        [Authorize]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -49,14 +51,16 @@ namespace Spice.Controllers
                 return NotFound();
             }
 
-            MenuItemVM.MenuItem = await _db.MenuItem.Include(n => n.Category).Include(n => n.SubCategory).SingleOrDefaultAsync(n => n.Id == id);
+            var menuItemFromDb = await _db.MenuItem.Include(n => n.Category).Include(n => n.SubCategory).SingleOrDefaultAsync(n => n.Id == id);
 
-            if (MenuItemVM.MenuItem == null)
+            ShoppingCart cartObj = new ShoppingCart()
             {
-                return NotFound();
-            }
-            var menuItemFromDb = await _db.MenuItem.FindAsync(MenuItemVM.MenuItem.Id);
-            return View(MenuItemVM);
+                MenuItem = menuItemFromDb,
+                MenuItemId = menuItemFromDb.Id
+            };
+            return View(cartObj);
+
+            //Resume here
         }
 
         public IActionResult Privacy()
